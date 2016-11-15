@@ -119,6 +119,8 @@ class MusicsController extends Controller
                 'artist_name' => 'Норовбанзад',
                 'genre'       => 1,
                 'description' => 'Дууны тайлбар (Жишээ)',
+                'instrument'  => 'Н. Жанцанноров',
+                'words_by'    => 'Б. Лхагвасүрэн',
                 'image'       => 'http://resources.eagle.mn/entertainment/images/2013/12/af1f9436832c7a822906a23724fadc8d/5f3ua3d0pcfa12i1l26sifln4d.jpg',
                 'url'         => url('/music/download/1')
             ],
@@ -129,6 +131,8 @@ class MusicsController extends Controller
                 'artist_name' => 'Норовбанзад',
                 'genre'       => 1,
                 'description' => 'Дууны тайлбар (Жишээ)',
+                'instrument'  => 'Н. Жанцанноров',
+                'words_by'    => 'Б. Лхагвасүрэн',
                 'image'       => 'http://resources.eagle.mn/entertainment/images/2013/12/af1f9436832c7a822906a23724fadc8d/5f3ua3d0pcfa12i1l26sifln4d.jpg',
                 'url'         => url('/music/download/2')
             ],
@@ -139,6 +143,8 @@ class MusicsController extends Controller
                 'artist_name' => 'Харанга',
                 'genre'       => 4,
                 'description' => 'Дууны тайлбар (Жишээ)',
+                'instrument'  => 'Н. Жанцанноров',
+                'words_by'    => 'Б. Лхагвасүрэн',
                 'image'       => 'https://i.ytimg.com/vi/XpYYSC1DMKU/maxresdefault.jpg',
                 'url'         => url('/music/download/3')
             ],
@@ -149,6 +155,8 @@ class MusicsController extends Controller
                 'artist_name'  => 'Харанга',
                 'genre'        => 4,
                 'description' => 'Дууны тайлбар (Жишээ)',
+                'instrument'  => 'Н. Жанцанноров',
+                'words_by'    => 'Б. Лхагвасүрэн',
                 'image'       => 'https://i.ytimg.com/vi/XpYYSC1DMKU/maxresdefault.jpg',
                 'url'         => url('/music/download/4')
             ],
@@ -159,6 +167,8 @@ class MusicsController extends Controller
                 'artist_name' => 'Tupac Shakur',
                 'genre'       => 2,
                 'description' => 'Дууны тайлбар (Жишээ)',
+                'instrument'  => 'Н. Жанцанноров',
+                'words_by'    => 'Б. Лхагвасүрэн',
                 'image'       => "http://hdimagesnew.com/wp-content/uploads/2015/11/Tupac-Shakur-Pictures-0.jpeg",
                 'url'         => url('/music/download/5')
             ],
@@ -169,6 +179,8 @@ class MusicsController extends Controller
                 'artist_name' => 'Tupac Shakur',
                 'genre'       => 2,
                 'description' => 'Дууны тайлбар (Жишээ)',
+                'instrument'  => 'Н. Жанцанноров',
+                'words_by'    => 'Б. Лхагвасүрэн',
                 'image'       => "http://hdimagesnew.com/wp-content/uploads/2015/11/Tupac-Shakur-Pictures-0.jpeg",
                 'url'         => url('/music/download/6')
             ]
