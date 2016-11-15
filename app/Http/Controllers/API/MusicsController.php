@@ -18,71 +18,126 @@ class MusicsController extends Controller
             '4' => 'Рок Поп',
             '5' => 'R&B',
             '6' => 'Алтернатив',
-            '7' => 'Электро'
+            '7' => 'Электро',
+            '8' => 'Зохиолын дуу'
         ];
 
-        return $genres;
+        //return $genres;
+        return response()->json($genres, 200, array(), JSON_PRETTY_PRINT);
     }
 
     public function artists()
     {
         $artists = [
-            '1' => [
-                'name'  => 'Tupac Shakur',
-                'about' => 'Tupac Amaru Shakur born Lesane Parish Crooks; June 16, 1971 – September 13, 1996), also known by his stage names 2Pac and Makaveli, was an American rapper, record producer, and actor. As of 2007, Shakur has sold over 75 million records worldwide.',
-                'genre' => 2
+            [
+                'id'          => 1,
+                'name'        => 'Tupac Shakur',
+                'description' => 'Tupac Amaru Shakur born Lesane Parish Crooks; June 16, 1971 – September 13, 1996), also known by his stage names 2Pac and Makaveli, was an American rapper, record producer, and actor. As of 2007, Shakur has sold over 75 million records worldwide.',
+                'genre'       => 2,
+                'image'       => "http://hdimagesnew.com/wp-content/uploads/2015/11/Tupac-Shakur-Pictures-0.jpeg"
             ],
-            '2' => [
-                'name'  => 'Haranga',
-                'about' => 'Харанга нь Монголын рок хамтлаг юм. Хамтлагийн гишүүд 1977 онд Ардын Армид татагдан танилцаж "Соёмбо" хамтлагт хамт тоглох болсон. Үүнээс хойш 10 гаран жил хамтдаа тоглож байгаад цэргээс халагдаж 1989 онд Драмын театрын дэргэд "Харанга" хамтлагийг байгуулжээ. 2016 онд "Алдрын Од" шагналыг хүртсэн юм.',
-                'genre' => 4
+            [
+                'id'          => 2,
+                'name'        => 'Haranga',
+                'description' => 'Харанга нь Монголын рок хамтлаг юм. Хамтлагийн гишүүд 1977 онд Ардын Армид татагдан танилцаж "Соёмбо" хамтлагт хамт тоглох болсон. Үүнээс хойш 10 гаран жил хамтдаа тоглож байгаад цэргээс халагдаж 1989 онд Драмын театрын дэргэд "Харанга" хамтлагийг байгуулжээ. 2016 онд "Алдрын Од" шагналыг хүртсэн юм.',
+                'genre'       => 4,
+                'image'       => 'https://i.ytimg.com/vi/XpYYSC1DMKU/maxresdefault.jpg'
             ],
-            '3' => [
-                'name'  => 'Намжилын Норовбанзад',
-                'about' => 'Намжилын Норовбанзад (1931 - 2002 оны 12 сарын 21) нь Дундговь аймгийн Дэрэн сумын уугуул, Монгол улсын хөдөлмөрийн баатар, Ардын жүжигчин цолтой уртын дуучин юм. Тэрээр 1957 онд Дэлхийн оюутан залуучуудын их наадмаас алтан медаль хүртэж байсан. 1993 онд Фүкүокагийн "Азийн соёлын шагнал"-ыг хүртсэн.',
-                'genre' => 1
+            [
+                'id'          => 3,
+                'name'        => 'Намжилын Норовбанзад',
+                'description' => 'Намжилын Норовбанзад (1931 - 2002 оны 12 сарын 21) нь Дундговь аймгийн Дэрэн сумын уугуул, Монгол улсын хөдөлмөрийн баатар, Ардын жүжигчин цолтой уртын дуучин юм. Тэрээр 1957 онд Дэлхийн оюутан залуучуудын их наадмаас алтан медаль хүртэж байсан. 1993 онд Фүкүокагийн "Азийн соёлын шагнал"-ыг хүртсэн.',
+                'genre'       => 1,
+                'image'       => 'http://resources.eagle.mn/entertainment/images/2013/12/af1f9436832c7a822906a23724fadc8d/5f3ua3d0pcfa12i1l26sifln4d.jpg'
             ],
         ];
 
-        return $artists;
+        return response()->json(['artists' => $artists], 200, array(), JSON_PRETTY_PRINT);
+    }
+
+    public function getArtist($id)
+    {
+        $artists = [
+            [
+                'id'          => 1,
+                'name'        => 'Tupac Shakur',
+                'description' => 'Tupac Amaru Shakur born Lesane Parish Crooks; June 16, 1971 – September 13, 1996), also known by his stage names 2Pac and Makaveli, was an American rapper, record producer, and actor. As of 2007, Shakur has sold over 75 million records worldwide.',
+                'genre'       => 2,
+                'image'       => "http://hdimagesnew.com/wp-content/uploads/2015/11/Tupac-Shakur-Pictures-0.jpeg"
+            ],
+            [
+                'id'          => 2,
+                'name'        => 'Haranga',
+                'description' => 'Харанга нь Монголын рок хамтлаг юм. Хамтлагийн гишүүд 1977 онд Ардын Армид татагдан танилцаж "Соёмбо" хамтлагт хамт тоглох болсон. Үүнээс хойш 10 гаран жил хамтдаа тоглож байгаад цэргээс халагдаж 1989 онд Драмын театрын дэргэд "Харанга" хамтлагийг байгуулжээ. 2016 онд "Алдрын Од" шагналыг хүртсэн юм.',
+                'genre'       => 4,
+                'image'       => 'https://i.ytimg.com/vi/XpYYSC1DMKU/maxresdefault.jpg'
+            ],
+            [
+                'id'          => 3,
+                'name'        => 'Намжилын Норовбанзад',
+                'description' => 'Намжилын Норовбанзад (1931 - 2002 оны 12 сарын 21) нь Дундговь аймгийн Дэрэн сумын уугуул, Монгол улсын хөдөлмөрийн баатар, Ардын жүжигчин цолтой уртын дуучин юм. Тэрээр 1957 онд Дэлхийн оюутан залуучуудын их наадмаас алтан медаль хүртэж байсан. 1993 онд Фүкүокагийн "Азийн соёлын шагнал"-ыг хүртсэн.',
+                'genre'       => 1,
+                'image'       => 'http://resources.eagle.mn/entertainment/images/2013/12/af1f9436832c7a822906a23724fadc8d/5f3ua3d0pcfa12i1l26sifln4d.jpg'
+            ],
+        ];
+
+        return response()->json(['artist' => $artists[$id]], 200, array(), JSON_PRETTY_PRINT);
     }
 
     public function musicList(Request $request)
     {
         $musics = [
-            '1' => [
-                'name'   => 'Уяхан замбуу тивийн наран',
-                'artist' => 'Норовбанзад',
-                'genre'  => 1
+            [
+                'id'          => 1,
+                'name'        => 'Уяхан замбуу тивийн наран',
+                'artist_id'   => 3,
+                'artist_name' => 'Норовбанзад',
+                'genre'       => 1,
+                'url'         => url('/music/download/1')
             ],
-            '2' => [
-                'name'   => 'Жаахан шарга',
-                'artist' => 'Норовбанзад',
-                'genre'  => 1
+            [
+                'id'          => 2,
+                'name'        => 'Жаахан шарга',
+                'artist_id'   => 3,
+                'artist_name' => 'Норовбанзад',
+                'genre'       => 1,
+                'url'         => url('/music/download/2')
             ],
-            '3' => [
-                'name'   => 'Эргэх учрал',
-                'artist' => 'Харанга',
-                'genre'  => 4
+            [
+                'id'          => 3,
+                'name'        => 'Эргэх учрал',
+                'artist_id'   => 2,
+                'artist_name' => 'Харанга',
+                'genre'       => 4,
+                'url'         => url('/music/download/3')
             ],
-            '4' => [
-                'name'   => 'Амьдрал',
-                'artist' => 'Харанга',
-                'genre'  => 4
+            [
+                'id'           => 4,
+                'name'         => 'Амьдрал',
+                'artist_id'    => 2,
+                'artist_name'  => 'Харанга',
+                'genre'        => 4,
+                'url'         => url('/music/download/4')
             ],
-            '5' => [
-                'name'   => 'Life Goes On',
-                'artist' => 'Tupac Shakur',
-                'genre'  => 2
+            [
+                'id'          => 5,
+                'name'        => 'Life Goes On',
+                'artist_id'   => 1,
+                'artist_name' => 'Tupac Shakur',
+                'genre'       => 2,
+                'url'         => url('/music/download/5')
             ],
-            '6' => [
-                'name'   => 'Tupac Keep Ya Head Up',
-                'artist' => 'Tupac Shakur',
-                'genre'  => 2
+            [
+                'id'          => 6,
+                'name'        => 'Tupac Keep Ya Head Up',
+                'artist_id'   => 1,
+                'artist_name' => 'Tupac Shakur',
+                'genre'       => 2,
+                'url'         => url('/music/download/6')
             ]
         ];
 
-        return $musics;
+        return response()->json(['musics' => $musics], 200, array(), JSON_PRETTY_PRINT);
     }
 
     public function getMusic($id)

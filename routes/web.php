@@ -23,6 +23,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/genres', 'API\MusicsController@genres');
 Route::get('/artists', 'API\MusicsController@artists');
+Route::get('/artist/{id}', 'API\MusicsController@getArtist');
 Route::get('/musics/list', 'API\MusicsController@musicList');
 Route::get('/music/download/{id}', 'API\MusicsController@getMusic');
 Route::get('/lyric/{id}', 'API\MusicsController@getLyric');
