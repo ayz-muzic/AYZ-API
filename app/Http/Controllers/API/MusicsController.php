@@ -125,7 +125,7 @@ class MusicsController extends Controller
             [
                 'id'          => 2,
                 'name'        => 'Жаахан шарга',
-                'artist_id'   => $artists[2],
+                'artist_id'   => 2,
                 'artist_name' => 'Норовбанзад',
                 'genre'       => 1,
                 'description' => 'Дууны тайлбар (Жишээ)',
