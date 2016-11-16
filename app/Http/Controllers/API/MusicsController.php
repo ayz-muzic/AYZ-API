@@ -93,21 +93,21 @@ class MusicsController extends Controller
                 'name'        => 'Tupac Shakur',
                 'description' => 'Tupac Amaru Shakur born Lesane Parish Crooks; June 16, 1971 – September 13, 1996), also known by his stage names 2Pac and Makaveli, was an American rapper, record producer, and actor. As of 2007, Shakur has sold over 75 million records worldwide.',
                 'genre'       => 2,
-                'image'       => "http://hdimagesnew.com/wp-content/uploads/2015/11/Tupac-Shakur-Pictures-0.jpeg"
+                'image'       => url('images/tupak.jpeg')
             ],
             [
                 'id'          => 2,
                 'name'        => 'Haranga',
                 'description' => 'Харанга нь Монголын рок хамтлаг юм. Хамтлагийн гишүүд 1977 онд Ардын Армид татагдан танилцаж "Соёмбо" хамтлагт хамт тоглох болсон. Үүнээс хойш 10 гаран жил хамтдаа тоглож байгаад цэргээс халагдаж 1989 онд Драмын театрын дэргэд "Харанга" хамтлагийг байгуулжээ. 2016 онд "Алдрын Од" шагналыг хүртсэн юм.',
                 'genre'       => 4,
-                'image'       => 'https://i.ytimg.com/vi/XpYYSC1DMKU/maxresdefault.jpg'
+                'image'       => url('images/haranga.jpg')
             ],
             [
                 'id'          => 3,
                 'name'        => 'Намжилын Норовбанзад',
                 'description' => 'Намжилын Норовбанзад (1931 - 2002 оны 12 сарын 21) нь Дундговь аймгийн Дэрэн сумын уугуул, Монгол улсын хөдөлмөрийн баатар, Ардын жүжигчин цолтой уртын дуучин юм. Тэрээр 1957 онд Дэлхийн оюутан залуучуудын их наадмаас алтан медаль хүртэж байсан. 1993 онд Фүкүокагийн "Азийн соёлын шагнал"-ыг хүртсэн.',
                 'genre'       => 1,
-                'image'       => 'http://resources.eagle.mn/entertainment/images/2013/12/af1f9436832c7a822906a23724fadc8d/5f3ua3d0pcfa12i1l26sifln4d.jpg'
+                'image'       => url('images/norovbanzad.jpg')
             ],
         ];
 
@@ -121,7 +121,7 @@ class MusicsController extends Controller
                 'description' => 'Дууны тайлбар (Жишээ)',
                 'instrument'  => 'Н. Жанцанноров',
                 'words_by'    => 'Б. Лхагвасүрэн',
-                'image'       => 'http://resources.eagle.mn/entertainment/images/2013/12/af1f9436832c7a822906a23724fadc8d/5f3ua3d0pcfa12i1l26sifln4d.jpg',
+                'image'       => url('images/norovbanzad.jpg'),
                 'url'         => url('/music/download/1')
             ],
             [
@@ -133,7 +133,7 @@ class MusicsController extends Controller
                 'description' => 'Дууны тайлбар (Жишээ)',
                 'instrument'  => 'Н. Жанцанноров',
                 'words_by'    => 'Б. Лхагвасүрэн',
-                'image'       => 'http://resources.eagle.mn/entertainment/images/2013/12/af1f9436832c7a822906a23724fadc8d/5f3ua3d0pcfa12i1l26sifln4d.jpg',
+                'image'       => url('images/norovbanzad.jpg'),
                 'url'         => url('/music/download/2')
             ],
             [
@@ -145,7 +145,7 @@ class MusicsController extends Controller
                 'description' => 'Дууны тайлбар (Жишээ)',
                 'instrument'  => 'Н. Жанцанноров',
                 'words_by'    => 'Б. Лхагвасүрэн',
-                'image'       => 'https://i.ytimg.com/vi/XpYYSC1DMKU/maxresdefault.jpg',
+                'image'       => url('images/haranga.jpg'),
                 'url'         => url('/music/download/3')
             ],
             [
@@ -157,7 +157,7 @@ class MusicsController extends Controller
                 'description' => 'Дууны тайлбар (Жишээ)',
                 'instrument'  => 'Н. Жанцанноров',
                 'words_by'    => 'Б. Лхагвасүрэн',
-                'image'       => 'https://i.ytimg.com/vi/XpYYSC1DMKU/maxresdefault.jpg',
+                'image'       => url('images/haranga.jpg'),
                 'url'         => url('/music/download/4')
             ],
             [
@@ -169,7 +169,7 @@ class MusicsController extends Controller
                 'description' => 'Дууны тайлбар (Жишээ)',
                 'instrument'  => 'Н. Жанцанноров',
                 'words_by'    => 'Б. Лхагвасүрэн',
-                'image'       => "http://hdimagesnew.com/wp-content/uploads/2015/11/Tupac-Shakur-Pictures-0.jpeg",
+                'image'       => url('images/tupak.jpeg'),
                 'url'         => url('/music/download/5')
             ],
             [
@@ -181,7 +181,7 @@ class MusicsController extends Controller
                 'description' => 'Дууны тайлбар (Жишээ)',
                 'instrument'  => 'Н. Жанцанноров',
                 'words_by'    => 'Б. Лхагвасүрэн',
-                'image'       => "http://hdimagesnew.com/wp-content/uploads/2015/11/Tupac-Shakur-Pictures-0.jpeg",
+                'image'       => url('images/tupak.jpeg'),
                 'url'         => url('/music/download/6')
             ]
         ];
